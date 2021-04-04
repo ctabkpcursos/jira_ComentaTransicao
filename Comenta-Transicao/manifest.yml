@@ -1,0 +1,13 @@
+modules:
+  trigger:
+  - key: transition-trigger
+    events:
+      - avi:acitivity:transitioned:issue
+    function: on-issue-transitioned
+
+  function:
+    - key: on-issue-transitioned
+      handler: index.onIssueTransitioned
+app:
+  id: ari:cloud:ecosystem::app/a279c123-85b9-40a4-9603-dca939d2a110
+  name: Comenta Transicao
